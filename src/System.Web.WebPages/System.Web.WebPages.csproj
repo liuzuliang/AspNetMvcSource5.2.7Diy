@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B87C54F7-339B-4E81-B603-05AD1AB58367}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System.Web.WebPages</RootNamespace>
+    <AssemblyName>System.Web.WebPages</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;CODE_ANALYSIS;ASPNETWEBPAGES</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\libs\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CommonResources.Designer.cs">
+      <Link>Common\CommonResources.Designer.cs</Link>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="..\Common\CollectionExtensions.cs">
+      <Link>Common\CollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Empty.cs">
+      <Link>Common\Empty.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\HashCodeCombiner.cs">
+      <Link>Common\HashCodeCombiner.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\ListWrapperCollection.cs">
+      <Link>Common\ListWrapperCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\PathHelpers.cs">
+      <Link>Common\PathHelpers.cs</Link>
+    </Compile>
+    <Compile Include="..\GlobalSuppressions.cs">
+      <Link>Common\GlobalSuppressions.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\PropertyHelper.cs" />
+    <Compile Include="ApplicationPart.cs" />
+    <Compile Include="ApplicationParts\ApplicationPartRegistry.cs" />
+    <Compile Include="ApplicationParts\DictionaryBasedVirtualPathFactory.cs" />
+    <Compile Include="ApplicationParts\IResourceAssembly.cs" />
+    <Compile Include="ApplicationParts\LazyAction.cs" />
+    <Compile Include="ApplicationParts\ResourceAssembly.cs" />
+    <Compile Include="ApplicationParts\ResourceHandler.cs" />
+    <Compile Include="ApplicationParts\ResourceRouteHandler.cs" />
+    <Compile Include="ApplicationStartPage.cs" />
+    <Compile Include="AttributeValue.cs" />
+    <Compile Include="BrowserHelpers.cs" />
+    <Compile Include="BrowserOverride.cs" />
+    <Compile Include="BrowserOverrideStore.cs" />
+    <Compile Include="BrowserOverrideStores.cs" />
+    <Compile Include="BuildManagerWrapper.cs" />
+    <Compile Include="Common\DisposableAction.cs" />
+    <Compile Include="CookieBrowserOverrideStore.cs" />
+    <Compile Include="DefaultDisplayMode.cs" />
+    <Compile Include="DisplayInfo.cs" />
+    <Compile Include="DisplayModeProvider.cs" />
+    <Compile Include="DynamicHttpApplicationState.cs" />
+    <Compile Include="DynamicPageDataDictionary.cs" />
+    <Compile Include="FileExistenceCache.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="HelperPage.cs" />
+    <Compile Include="HelperResult.cs" />
+    <Compile Include="Helpers\AntiForgery.cs" />
+    <Compile Include="Helpers\AntiForgeryConfig.cs" />
+    <Compile Include="Helpers\AntiXsrf\AntiForgeryConfigWrapper.cs" />
+    <Compile Include="Helpers\AntiXsrf\AntiForgeryToken.cs" />
+    <Compile Include="Helpers\AntiXsrf\AntiForgeryTokenSerializer.cs" />
+    <Compile Include="Helpers\AntiXsrf\AntiForgeryTokenStore.cs" />
+    <Compile Include="Helpers\AntiXsrf\AntiForgeryWorker.cs" />
+    <Compile Include="Helpers\AntiXsrf\BinaryBlob.cs" />
+    <Compile Include="Helpers\AntiXsrf\ClaimUidExtractor.cs" />
+    <Compile Include="Helpers\AntiXsrf\IAntiForgeryConfig.cs" />
+    <Compile Include="Helpers\AntiXsrf\IAntiForgeryTokenSerializer.cs" />
+    <Compile Include="Helpers\AntiXsrf\IClaimUidExtractor.cs" />
+    <Compile Include="Helpers\AntiXsrf\ICryptoSystem.cs" />
+    <Compile Include="Helpers\AntiXsrf\ITokenStore.cs" />
+    <Compile Include="Helpers\AntiXsrf\ITokenValidator.cs" />
+    <Compile Include="Helpers\AntiXsrf\MachineKey45CryptoSystem.cs" />
+    <Compile Include="Helpers\AntiXsrf\TokenValidator.cs" />
+    <Compile Include="Helpers\Claims\Claim.cs" />
+    <Compile Include="Helpers\Claims\ClaimsIdentity.cs" />
+    <Compile Include="Helpers\Claims\ClaimsIdentityConverter.cs" />
+    <Compile Include="Helpers\CryptoUtil.cs" />
+    <Compile Include="Helpers\IAntiForgeryAdditionalDataProvider.cs" />
+    <Compile Include="Helpers\UnvalidatedRequestValues.cs" />
+    <Compile Include="Helpers\Validation.cs" />
+    <Compile Include="Html\HtmlHelper.Checkbox.cs" />
+    <Compile Include="Html\HtmlHelper.cs" />
+    <Compile Include="Html\HtmlHelper.Input.cs" />
+    <Compile Include="Html\HtmlHelper.Internal.cs" />
+    <Compile Include="Html\HtmlHelper.Label.cs" />
+    <Compile Include="Html\HtmlHelper.Radio.cs" />
+    <Compile Include="Html\HtmlHelper.Select.cs" />
+    <Compile Include="Html\HtmlHelper.TextArea.cs" />
+    <Compile Include="Html\HtmlHelper.Validation.cs" />
+    <Compile Include="Html\ModelState.cs" />
+    <Compile Include="Html\ModelStateDictionary.cs" />
+    <Compile Include="Html\SelectListItem.cs" />
+    <Compile Include="HttpContextExtensions.cs" />
+    <Compile Include="IDisplayMode.cs" />
+    <Compile Include="Instrumentation\HttpContextAdapter.Availability.cs" />
+    <Compile Include="Instrumentation\HttpContextAdapter.generated.cs" />
+    <Compile Include="Instrumentation\InstrumentationService.cs" />
+    <Compile Include="Instrumentation\PageExecutionContextAdapter.generated.cs" />
+    <Compile Include="Instrumentation\PageExecutionListenerAdapter.generated.cs" />
+    <Compile Include="Instrumentation\PageInstrumentationServiceAdapter.cs" />
+    <Compile Include="Instrumentation\PositionTagged.cs" />
+    <Compile Include="ITemplateFile.cs" />
+    <Compile Include="IVirtualPathFactory.cs" />
+    <Compile Include="IVirtualPathUtility.cs" />
+    <Compile Include="IWebPageRequestExecutor.cs" />
+    <Compile Include="MimeMapping.cs" />
+    <Compile Include="Mvc\HttpAntiForgeryException.cs" />
+    <Compile Include="Mvc\ModelClientValidationEqualToRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationMaxLengthRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationMembershipPasswordRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationMinLengthRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationRangeRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationRegexRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationRemoteRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationRequiredRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationRule.cs" />
+    <Compile Include="Mvc\ModelClientValidationStringLengthRule.cs" />
+    <Compile Include="Mvc\TagBuilder.cs" />
+    <Compile Include="Mvc\TagRenderMode.cs" />
+    <Compile Include="Mvc\UnobtrusiveValidationAttributesGenerator.cs" />
+    <Compile Include="PageDataDictionary.cs" />
+    <Compile Include="PageVirtualPathAttribute.cs" />
+    <Compile Include="PreApplicationStartCode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReflectionDynamicObject.cs" />
+    <Compile Include="RequestBrowserOverrideStore.cs" />
+    <Compile Include="RequestExtensions.cs" />
+    <Compile Include="RequestResourceTracker.cs" />
+    <Compile Include="Resources\WebPageResources.Designer.cs" />
+    <Compile Include="ResponseExtensions.cs" />
+    <Compile Include="Scope\ApplicationScopeStorageDictionary.cs" />
+    <Compile Include="Scope\AspNetRequestScopeStorageProvider.cs" />
+    <Compile Include="Scope\IScopeStorageProvider.cs" />
+    <Compile Include="Scope\ScopeStorage.cs" />
+    <Compile Include="Scope\ScopeStorageComparer.cs" />
+    <Compile Include="Scope\ScopeStorageDictionary.cs" />
+    <Compile Include="Scope\StaticScopeStorageProvider.cs" />
+    <Compile Include="Scope\WebConfigScopeStorageDictionary.cs" />
+    <Compile Include="SectionWriter.cs" />
+    <Compile Include="StartPage.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="StringWriterExtensions.cs" />
+    <Compile Include="TemplateFileInfo.cs" />
+    <Compile Include="TemplateStack.cs" />
+    <Compile Include="UrlDataList.cs" />
+    <Compile Include="Utils\BuildManagerExceptionUtil.cs" />
+    <Compile Include="Utils\CultureUtil.cs" />
+    <Compile Include="Utils\HtmlAttributePropertyHelper.cs" />
+    <Compile Include="Utils\PathUtil.cs" />
+    <Compile Include="Utils\SessionStateUtil.cs" />
+    <Compile Include="Utils\TypeHelper.cs" />
+    <Compile Include="Utils\UrlRewriterHelper.cs" />
+    <Compile Include="Utils\UrlUtil.cs" />
+    <Compile Include="Validation\CompareValidator.cs" />
+    <Compile Include="Validation\DataTypeValidator.cs" />
+    <Compile Include="Validation\IValidator.cs" />
+    <Compile Include="Validation\RequestFieldValidatorBase.cs" />
+    <Compile Include="Validation\ValidationAttributeAdapter.cs" />
+    <Compile Include="Validation\ValidationHelper.cs" />
+    <Compile Include="Validation\Validator.cs" />
+    <Compile Include="VirtualPathFactoryExtensions.cs" />
+    <Compile Include="VirtualPathFactoryManager.cs" />
+    <Compile Include="VirtualPathUtilityWrapper.cs" />
+    <Compile Include="WebPage.cs" />
+    <Compile Include="WebPageBase.cs" />
+    <Compile Include="WebPageContext.cs" />
+    <Compile Include="WebPageExecutingBase.cs" />
+    <Compile Include="WebPageHttpHandler.cs" />
+    <Compile Include="WebPageHttpModule.cs" />
+    <Compile Include="WebPageMatch.cs" />
+    <Compile Include="WebPageRenderingBase.cs" />
+    <Compile Include="WebPageRoute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\WebPageResources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\System.Web.Razor\System.Web.Razor.csproj">
+      <Project>{cb55764d-ffa2-4cc8-b467-0274bfe5a643}</Project>
+      <Name>System.Web.Razor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\System.Web.WebPages.Deployment\System.Web.WebPages.Deployment.csproj">
+      <Project>{d8abb2e6-8291-4801-af66-faf450d359c8}</Project>
+      <Name>System.Web.WebPages.Deployment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

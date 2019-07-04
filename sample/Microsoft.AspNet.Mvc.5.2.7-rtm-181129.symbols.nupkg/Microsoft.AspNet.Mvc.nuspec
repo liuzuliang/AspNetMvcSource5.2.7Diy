@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.AspNet.Mvc</id>
+    <version>5.2.7-rtm-181129</version>
+    <title>Microsoft ASP.NET MVC (nightly 2018 Nov 29)</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft,aspnet</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</licenseUrl>
+    <projectUrl>https://www.asp.net/mvc</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <description>This package contains the runtime assemblies for ASP.NET MVC. ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that enables a clean separation of concerns and that gives you full control over markup.</description>
+    <summary>This package contains the runtime assemblies for ASP.NET MVC.</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>Microsoft AspNet Mvc AspNetMvc</tags>
+    <repository type="git" url="https://github.com/aspnet/AspNetWebStack" />
+    <dependencies>
+      <dependency id="Microsoft.AspNet.WebPages" version="[3.2.7-rtm-181129, 3.3.0)" />
+      <dependency id="Microsoft.AspNet.Razor" version="[3.2.7-rtm-181129, 3.3.0)" />
+    </dependencies>
+  </metadata>
+</package>

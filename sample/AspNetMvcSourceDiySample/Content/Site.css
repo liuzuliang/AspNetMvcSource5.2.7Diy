@@ -1,0 +1,39 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* 居中的 DIV */
+div.middleDiv { text-align: center; margin: 0px 5px 0px 5px; }
+div.middleDiv table { text-align: center }
+div.middleDiv table thead { text-align: center; height: 19px; }
+div.middleDiv table thead tr { text-align: center; height: 19px; }
+div.middleDiv table th { background-color: #ff9900; color: #FFF9F9; vertical-align: bottom; font-size: 14px; }
+div.middleDiv table th, div.middleDiv table td { text-align: center; font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; border: solid 1px #F47E41; }
+div.middleDiv table tfoot tr { border-bottom: solid 1px #F47E41; }
+
+/* 左对齐的 DIV */
+div.leftAlignDiv { text-align: left; margin: 0px 5px 0px 5px; }
+div.leftAlignDiv table { text-align: left }
+div.leftAlignDiv table thead { text-align: center; height: 19px; }
+div.leftAlignDiv table thead tr { text-align: center; height: 19px; }
+div.leftAlignDiv table th { background-color: #ff9900; color: #FFF9F9; vertical-align: bottom; font-size: 14px; text-align: center; }
+div.leftAlignDiv table th, div.leftAlignDiv table td { font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; border: solid 1px #F47E41; }
+div.leftAlignDiv table td { text-align: left; padding: 0px 5px 0px 5px; }
+
+/* saveDiv */
+div.saveDiv { margin:20px 0px; text-align:center; }
+
