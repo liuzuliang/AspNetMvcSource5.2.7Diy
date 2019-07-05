@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -112,13 +115,18 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\QuotationsController.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridPropertyBindingContext.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridAttribute.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridModelBinder.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\TransferSingle.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\TypeHelpers.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\ValueProviderResultWrapper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AddQuotaVendorStatusViewModel.cs" />
     <Compile Include="Models\AddQuotaViewModel.cs" />
+    <Compile Include="Models\MQuoSubAns.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +144,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Views\Quotations\AddQuotationsTranditional.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

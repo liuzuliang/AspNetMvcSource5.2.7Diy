@@ -1,0 +1,8 @@
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\bin\Debug\System.Web.Razor.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\bin\Debug\System.Web.Razor.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.Common.CommonResources.resources
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.Resources.RazorResources.resources
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.csproj.GenerateResource.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.csproj.CoreCompileInputs.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.Razor\obj\Debug\System.Web.Razor.pdb

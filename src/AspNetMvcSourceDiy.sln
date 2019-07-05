@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Web.WebPages.Razor",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Web.Mvc", "System.Web.Mvc\System.Web.Mvc.csproj", "{CC4C9AA5-404A-4113-9E34-A9A65920BB9F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcSourceDiySample", "AspNetMvcSourceDiySample\AspNetMvcSourceDiySample.csproj", "{0130C27E-1E8F-4DAF-9E49-ED3254B437A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CC4C9AA5-404A-4113-9E34-A9A65920BB9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC4C9AA5-404A-4113-9E34-A9A65920BB9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC4C9AA5-404A-4113-9E34-A9A65920BB9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0130C27E-1E8F-4DAF-9E49-ED3254B437A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0130C27E-1E8F-4DAF-9E49-ED3254B437A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0130C27E-1E8F-4DAF-9E49-ED3254B437A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0130C27E-1E8F-4DAF-9E49-ED3254B437A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

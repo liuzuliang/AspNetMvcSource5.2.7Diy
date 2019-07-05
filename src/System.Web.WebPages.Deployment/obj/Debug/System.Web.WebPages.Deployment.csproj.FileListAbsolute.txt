@@ -1,0 +1,9 @@
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\bin\Debug\System.Web.WebPages.Deployment.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.Resources.ConfigurationResources.resources
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.csproj.GenerateResource.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.csproj.CoreCompileInputs.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.csproj.CopyComplete
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.pdb

@@ -12,6 +12,17 @@ namespace AspNetMvcSourceDiySample.Models
         public string Vendor { get; set; }
 
         [Required]
-        public string Status { get; set; }
+        public double Age { get; set; }
+
+        [Required]
+        public DateTime DateOfBirth { get; set; }
+
+        [Required]
+        public string TestRequired { get; set; }
+
+        public string ReadonlyProp { get; }
+
+        [Required]
+        public MQuoSubAns Status { get; set; }
     }
 }

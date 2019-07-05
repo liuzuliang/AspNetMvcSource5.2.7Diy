@@ -1,12 +1,17 @@
 ﻿
 @{
     ViewBag.Title = "Add Quotations";
+    string currentActionName = (string)this.ViewContext.RouteData.Values["action"];
+    string currentControllerName = (string)this.ViewContext.RouteData.Values["controller"];
 }
 <script src="~/Scripts/plugins/appendGrid/AppendGrid.js"></script>
-<h2>Add Quotations</h2>
+<h2>@ViewBag.Title</h2>
 
-@using (Html.BeginForm("AddQuotations", "Quotations", null, FormMethod.Post, new { id = "form_saveQuotations" }))
+@using (Html.BeginForm(currentActionName, currentControllerName, null, FormMethod.Post, new { id = "form_saveQuotations" }))
 {
+    <div class="normalDiv">
+        <input type="text" name="Name" />
+    </div>
     <div class="middleDiv">
         <table id="VendorStatusGrid" style="width:100%;"></table>
     </div>
@@ -17,45 +22,48 @@
 
 <div>
     <script type="text/javascript">
-    var myAppendGrid;
-    var vendorName = "Vendor";
-    var vendorStatus = "Status";
-    function validateForm() {
-        return true;
-    }
-    $("#form_saveQuotations").submit(function ()
-    {
-        if (!validateForm()) {
-            return false;
+        var myAppendGrid;
+        var vendorName = "Vendor";
+        var ageName = "Age";
+        var dateOfBirthName = "DateOfBirth";
+        var vendorStatus = "Status";
+        function validateForm() {
+            return true;
         }
-        //alert("validation success.");
-        return true;
-    });
-    $(document).ready(function () {
-        myAppendGrid = new AppendGrid({
-            element: "VendorStatusGrid",
-            //nameFormatter: function(idPrefix, name, uniqueIndex) {
-            //    return idPrefix + "[" + (uniqueIndex - 1) + "]" + "." + name;
-            //},
-            columns: [
-                { name: vendorName, display: "Vendor"},
-                {
-                    name: vendorStatus, display: "Status", type: "select", ctrlOptions:
-                    {
-                        "S": "Submitted Offer",
-                        "D": "Declined To Quotations",
-                        "N": "NoResponse"
-                    }
-                }
-            ],
-            hideButtons: {
-                // Hide the move up and move down button on each row
-                insert:true,
-                moveUp: true,
-                moveDown: true
+        $("#form_saveQuotations").submit(function () {
+            if (!validateForm()) {
+                return false;
             }
+            //alert("validation success.");
+            return true;
         });
-    });
+        $(document).ready(function () {
+            myAppendGrid = new AppendGrid({
+                element: "VendorStatusGrid",
+                //nameFormatter: function(idPrefix, name, uniqueIndex) {
+                //    return idPrefix + "[" + (uniqueIndex - 1) + "]" + "." + name;
+                //},
+                columns: [
+                    { name: vendorName, display: "Vendor" },
+                    { name: ageName, display: "Age" },
+                    { name: dateOfBirthName, display: "DateOfBirth" },
+                    {
+                        name: vendorStatus, display: "Status", type: "select", ctrlOptions:
+                        {
+                            "1": "Submitted Offer",
+                            "2": "Declined To Quotations",
+                            "3": "NoResponse"
+                        }
+                    }
+                ],
+                hideButtons: {
+                    // Hide the move up and move down button on each row
+                    insert: true,
+                    moveUp: true,
+                    moveDown: true
+                }
+            });
+        });
     </script>
 </div>
 

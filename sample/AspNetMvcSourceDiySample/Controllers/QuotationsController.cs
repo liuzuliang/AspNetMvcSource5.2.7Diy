@@ -24,12 +24,29 @@ namespace AspNetMvcSourceDiySample.Controllers
         [HttpPost]
         public ActionResult AddQuotations([ModelBinder(typeof(DynamicGridModelBinder))] AddQuotaViewModel viewModel, FormCollection form)
         {
-            if (!ModelState.IsValid)
-            {
-                return RedirectToAction("NoResponse", new { page = string.Empty });
-            }
-            //return null;
+            return AddQuotationsPostCore(viewModel);
+        }
+
+        public ActionResult AddQuotationsTranditional()
+        {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddQuotationsTranditional(AddQuotaViewModel viewModel, FormCollection form)
+        {
+            return AddQuotationsPostCore(viewModel);
+        }
+
+        private ActionResult AddQuotationsPostCore(AddQuotaViewModel viewModel)
+        {
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(new
+            {
+                viewModel = viewModel,
+                modelState_IsValid = this.ModelState.IsValid,
+                modelState_Values = this.ModelState.Values,
+            }, Newtonsoft.Json.Formatting.Indented);
+            return Content(json);
         }
     }
 }

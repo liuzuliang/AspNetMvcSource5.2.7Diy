@@ -1,0 +1,16 @@
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.Razor.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.Razor.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.Razor.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.Razor.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\bin\Debug\System.Web.WebPages.Deployment.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.csprojAssemblyReference.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.Resources.RazorWebResources.resources
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.csproj.GenerateResource.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.csproj.CoreCompileInputs.cache
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.csproj.CopyComplete
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.dll
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Razor\obj\Debug\System.Web.WebPages.Razor.pdb
