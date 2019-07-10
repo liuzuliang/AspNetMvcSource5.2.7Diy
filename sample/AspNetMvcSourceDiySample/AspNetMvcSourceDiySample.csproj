@@ -107,34 +107,13 @@
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\plugins\appendGrid\AppendGrid.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\Quotations\Index.cshtml" />
-    <Content Include="Views\Quotations\AddQuotations.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\QuotationsController.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridConfig.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridModelBinderConfigurationException.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridPropertyBindingContext.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridAttribute.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridModelBinder.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridTypeFor.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridTypeContainer.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\IDynamicGridSetting.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridConfiguration.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\PropertyMappingAttribute.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\TypeHelpers.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AddQuotaVendorStatusViewModel.cs" />
-    <Compile Include="Models\AddQuotaViewModel.cs" />
-    <Compile Include="Models\MQuoSubAns.cs" />
-    <Compile Include="Models\QuotaQueryCondition.cs" />
-    <Compile Include="Models\SystemConst.cs" />
-    <Compile Include="Models\UserQueryCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -152,7 +131,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-    <Content Include="Views\Quotations\AddQuotationsTranditional.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -162,6 +140,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

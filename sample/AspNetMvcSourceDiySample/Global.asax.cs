@@ -1,6 +1,4 @@
-﻿using AspNetMvcSourceDiySample.Extensions.ModelBinders.DynGrid;
-using AspNetMvcSourceDiySample.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -34,15 +32,6 @@ namespace AspNetMvcSourceDiySample
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            //动态注册
-            DynamicGridConfig defaultConfig = new DynamicGridConfig
-            {
-                FormatSeparator = SystemConst.DgdFormatSeparator
-            };
-            DynamicGridTypeContainer.For<UserQueryCondition>()
-                .Register(c => c.HobbyList, defaultConfig)
-                .Register(c => c.AgesIn, defaultConfig)
-                .Register(c => c.Date_Of_Birth_In, defaultConfig);
         }
     }
 }
