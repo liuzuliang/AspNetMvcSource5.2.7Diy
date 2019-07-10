@@ -115,18 +115,26 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\QuotationsController.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridConfig.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridModelBinderConfigurationException.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridPropertyBindingContext.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridAttribute.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridModelBinder.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\TransferSingle.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridTypeFor.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridTypeContainer.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\IDynamicGridSetting.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\DynamicGridConfiguration.cs" />
+    <Compile Include="Extensions\ModelBinders\DynGrid\PropertyMappingAttribute.cs" />
     <Compile Include="Extensions\ModelBinders\DynGrid\TypeHelpers.cs" />
-    <Compile Include="Extensions\ModelBinders\DynGrid\ValueProviderResultWrapper.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AddQuotaVendorStatusViewModel.cs" />
     <Compile Include="Models\AddQuotaViewModel.cs" />
     <Compile Include="Models\MQuoSubAns.cs" />
+    <Compile Include="Models\QuotaQueryCondition.cs" />
+    <Compile Include="Models\SystemConst.cs" />
+    <Compile Include="Models\UserQueryCondition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

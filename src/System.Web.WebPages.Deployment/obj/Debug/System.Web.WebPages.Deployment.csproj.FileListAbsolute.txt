@@ -7,3 +7,4 @@ D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Deb
 D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.csproj.CopyComplete
 D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.dll
 D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.pdb
+D:\GithubWorkSpace\AspNetMvcSourceDiy\src\System.Web.WebPages.Deployment\obj\Debug\System.Web.WebPages.Deployment.csprojAssemblyReference.cache

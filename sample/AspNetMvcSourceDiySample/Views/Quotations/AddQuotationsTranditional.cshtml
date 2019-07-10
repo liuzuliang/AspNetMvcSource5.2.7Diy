@@ -17,11 +17,17 @@ for (int i = 0; i< 3; i++)
     Vendor@(i + 1)：
     <input name="VendorList[@(i)].Vendor" type="text">
     &nbsp;&nbsp;&nbsp;
+    Age@(i + 1)：
+    <input name="VendorList[@(i)].Age" type="text">
+    &nbsp;&nbsp;&nbsp;
+    DateOfBirth@(i + 1)：
+    <input name="VendorList[@(i)].DateOfBirth" type="text">
+    &nbsp;&nbsp;&nbsp;
     Status@(i + 1)：
     <select name="VendorList[@(i)].Status">
-        <option value="1.53">Submitted Offer</option>
+        <option value="1">Submitted Offer</option>
         <option value="2">Declined To Quotations</option>
-        <option value="8963.236">NoResponse</option>
+        <option value="3">NoResponse</option>
     </select>
 </div>
 }

@@ -19,38 +19,56 @@ namespace AspNetMvcSourceDiySample.Extensions.ModelBinders.DynGrid
             {
                 return false;
             }
-            // if this property is rejected by the filter, move on
             if (propertyFilter != null && !propertyFilter(property.Name))
             {
                 return false;
             }
-            // otherwise, allow
             return true;
         }
 
         public static bool CanUpdateReadonlyTypedReference(Type type)
         {
-            // value types aren't strictly immutable, but because they have copy-by-value semantics
-            // we can't update a value type that is marked readonly
             if (type.IsValueType)
             {
                 return false;
             }
-
-            // arrays are mutable, but because we can't change their length we shouldn't try
-            // to update an array that is referenced readonly
             if (type.IsArray)
             {
                 return false;
             }
-
-            // special-case known common immutable types
             if (type == typeof(string))
             {
                 return false;
             }
 
             return true;
+        }
+
+        /// <summary>
+        /// 尝试着转换成枚举类型。如果返回 Null，则表示转换失败。
+        /// </summary>
+        /// <param name="enumType">要转换成目标枚举的类型</param>
+        /// <param name="value">值</param>
+        /// <param name="ignoreCase">是否忽略大小写</param>
+        /// <returns></returns>
+        public static object TryParseEnum(Type enumType, string value, bool ignoreCase)
+        {
+            object enumObj;
+            try
+            {
+                enumObj = Enum.Parse(enumType, value, ignoreCase);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            //到这里说明
+            if (Enum.IsDefined(enumType, enumObj))
+            {
+                //到这里说明是真正的、合法的值
+                return enumObj;
+            }
+            return null; //非法的值
         }
     }
 }

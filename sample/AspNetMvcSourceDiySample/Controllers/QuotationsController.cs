@@ -16,6 +16,18 @@ namespace AspNetMvcSourceDiySample.Controllers
             return View();
         }
 
+        public ActionResult List(QuotaQueryCondition queryCondition)
+        {
+            string json = GetJson(queryCondition);
+            return Content(json);
+        }
+
+        public ActionResult UserInfo([ModelBinder(typeof(DynamicGridModelBinder))] UserQueryCondition queryCondition)
+        {
+            string json = GetJson(queryCondition);
+            return Content(json);
+        }
+
         public ActionResult AddQuotations()
         {
             return View();
@@ -40,13 +52,18 @@ namespace AspNetMvcSourceDiySample.Controllers
 
         private ActionResult AddQuotationsPostCore(AddQuotaViewModel viewModel)
         {
-            string json = Newtonsoft.Json.JsonConvert.SerializeObject(new
+            string json = GetJson(new
             {
                 viewModel = viewModel,
                 modelState_IsValid = this.ModelState.IsValid,
                 modelState_Values = this.ModelState.Values,
-            }, Newtonsoft.Json.Formatting.Indented);
+            });
             return Content(json);
+        }
+
+        private string GetJson(object obj)
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(obj, Newtonsoft.Json.Formatting.Indented);
         }
     }
 }
